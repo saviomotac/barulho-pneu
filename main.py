@@ -72,7 +72,7 @@ def draw_tread(surface, center_x, center_y, radius, angle):
 # Loop principal
 running = True
 while running:
-    time_delta = clock.tick(60) / 1000.0  # Controlar a velocidade do loop
+    time_delta = clock.tick_busy_loop(60) / 1000.0  # Controlar a velocidade do loop
 
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
