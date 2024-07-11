@@ -46,7 +46,7 @@ y_center = HEIGHT // 2
 
 clock = pygame.time.Clock()
 last_contact = False  # Flag para detectar o contato com o solo
-contact_tolerance = 15  # Tolerância para detectar contato (em pixels)
+contact_tolerance = 30 # Tolerância para detectar contato (em pixels)
 
 # Função para calcular a velocidade em km/h
 def calculate_speed_kmh(speed_rps):
